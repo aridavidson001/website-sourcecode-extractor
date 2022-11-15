@@ -15,7 +15,7 @@ try:
   print(soup)
   string_thingy = source
  # HtmlFile = encode(soup, 'r', encoding='utf-8')
-  source.encode()
+  string_thingy.encode()
 
   st.write('soup')
   components.html(source)
