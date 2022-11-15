@@ -7,7 +7,7 @@ import streamlit as st
 try:
   source = requests.get(st.text_input("Insert URL here"))
   source.raise_for_status()
-  #st.write(source)
+  st.write(source)
   soup = BeautifulSoup(source.text,'html.parser')
   st.write(soup)
   
