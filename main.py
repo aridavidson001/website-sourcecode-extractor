@@ -12,6 +12,9 @@ try:
   source.raise_for_status()
   st.write(source)
   soup = BeautifulSoup(source.text,'html.parser')
+  
+  HtmlFile = open(soup, 'r', encoding='utf-8')
+  
   st.write('soup')
   components.html(soup)
   
