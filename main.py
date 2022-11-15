@@ -13,12 +13,11 @@ try:
  # st.write(source)
   soup = BeautifulSoup(source.text,'html.parser')
   print(soup)
-  string_thingy = source
  # HtmlFile = encode(soup, 'r', encoding='utf-8')
-  string_thingy.encode()
+ htmlcode = source.encode()
 
   st.write('soup')
-  components.html(source)
+  components.html(htmlcode)
   
 except Exception as e:
   st.write(e)
