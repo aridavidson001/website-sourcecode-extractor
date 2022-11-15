@@ -16,7 +16,7 @@ try:
  # HtmlFile = open(soup, 'r', encoding='utf-8')
   
   st.write('soup')
-  components.iframe(url)
+  components.html(source)
   
 except Exception as e:
   st.write(e)
