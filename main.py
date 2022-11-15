@@ -14,7 +14,7 @@ try:
   soup = BeautifulSoup(source.text,'html.parser')
   print(soup)
  # HtmlFile = encode(soup, 'r', encoding='utf-8')
- htmlcode = source.encode()
+  htmlcode = source.encode()
 
   st.write('soup')
   components.html(htmlcode)
