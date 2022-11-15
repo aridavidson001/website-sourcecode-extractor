@@ -12,8 +12,8 @@ try:
   source.raise_for_status()
   st.write(source)
   soup = BeautifulSoup(source.text,'html.parser')
+  st.write(soup)
   components.html(soup)
-  print(soup)
   
 except Exception as e:
   st.write(e)
