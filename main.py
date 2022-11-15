@@ -13,7 +13,7 @@ try:
   soup = BeautifulSoup(source.text,'html.parser')
   
   htmlcode = soup.encode()
-  components.html(htmlcode)
+  components.html(htmlcode, height = 1200)
   
 except Exception as e:
   st.write(e)
