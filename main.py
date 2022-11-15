@@ -12,11 +12,11 @@ try:
   source.raise_for_status()
   st.write(source)
   soup = BeautifulSoup(source.text,'html.parser')
-  
-  HtmlFile = open(soup, 'r', encoding='utf-8')
+  print(soup)
+ # HtmlFile = open(soup, 'r', encoding='utf-8')
   
   st.write('soup')
-  components.html(soup)
+  components.iframe(url)
   
 except Exception as e:
   st.write(e)
