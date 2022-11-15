@@ -12,7 +12,7 @@ try:
   source.raise_for_status()
   st.write(source)
   soup = BeautifulSoup(source.text,'html.parser')
-  st.write(soup)
+  st.write('soup')
   components.html(soup)
   
 except Exception as e:
