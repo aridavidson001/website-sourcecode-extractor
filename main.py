@@ -13,6 +13,7 @@ try:
  # st.write(source)
   soup = BeautifulSoup(source.text,'html.parser')
   print(soup)
+  string_thingy = source
  # HtmlFile = encode(soup, 'r', encoding='utf-8')
   source.encode()
 
