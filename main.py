@@ -6,7 +6,7 @@ import streamlit as st
 source_url = st.text_input("Insert URL Here")
 submit = st.button("submit") 
 with submit:
-   try:
+  try:
      source = requests.get(source_url)
      source.raise_for_status()
      st.write(source)
