@@ -4,7 +4,8 @@ import requests
 import streamlit as st
 
 source_url = st.text_input("Insert URL Here")
-with source_url:
+submit = st.button("submit")
+with submit:
   try:
     source = requests.get(source_url)
     source.raise_for_status()
